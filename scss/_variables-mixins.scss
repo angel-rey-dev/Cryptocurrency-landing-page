@@ -25,11 +25,16 @@ $footer-icon-color: #eeeeee;
 $footer-icon-bg-color: #28285a;
 
 // ------------- Mixins --------------------
-@mixin button($width: 120px, $pd-y: 10px, $pd-x: 10px, $bdr-r: 25px) {
+@mixin button($width: 150px, $pd-y: 8px, $pd-x: 10px, $bdr-r: 25px,$fnt-size:1.4rem) {
   width: $width;
   padding: $pd-y $pd-x;
-  color: $btn-bg-color;
+  background-color: $btn-bg-color;
+  color: #fff;
   border-radius: $bdr-r;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: $fnt-size;
 }
 @mixin flexbox($flow: row wrap, $jtf: center, $algn-items: center) {
   display: flex;
@@ -40,3 +45,4 @@ $footer-icon-bg-color: #28285a;
 @mixin border($color:magenta) {
   border: 1px solid $color;
 }
+// 400 500 700

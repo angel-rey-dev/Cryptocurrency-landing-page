@@ -1,0 +1,128 @@
+/* Main header styles*/
+.main-header {
+  width: 100%;
+  background-image: url(../assets/header-assets/header-pattern1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 75px;
+  @include border(cyan);
+
+  // Navbar
+  &#{-navbar} {
+    width: 100%;
+    @include border(greenyellow);
+    @include flexbox;
+    margin-bottom: 50px;
+
+    &#{__logo} {
+      width: 40%;
+      margin-right: auto;
+    }
+    &#{__login} {
+      order: 1;
+      width: 50%;
+      @include flexbox($jtf: space-between);
+
+      &#{__login-btn} {
+        width: 35%;
+        color: #fff;
+        font-size: 1.3rem;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.664);
+      }
+      &#{__register-btn} {
+        @include button($width: 60%, $fnt-size: 1.3rem);
+      }
+    }
+    &#{__nav} {
+      margin-top: 15px;
+      order: 2;
+      width: 100%;
+      list-style-type: none;
+      @include flexbox($jtf: space-evenly);
+
+      &#{__item} {
+        color: #fff;
+        font-size: 1.4rem;
+      }
+      &#{__link} {
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+  }
+  //   Header content
+
+  &#{-content-principal} {
+    @include border(orange);
+    width: 100%;
+    @include flexbox;
+    text-align: center;
+
+    &#{__title} {
+      margin-top: 40px;
+      font-size: 3rem;
+      span {
+        color: $ethereum-icon-bg-color;
+      }
+    }
+    &#{__description} {
+      font-size: 1.4rem;
+      margin: 25px auto;
+      font-weight: 400;
+    }
+    &#{__btn} {
+      @include button;
+
+      i {
+        margin-left: 10px;
+        color: $btn-bg-color;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 5px;
+        width: 25px;
+      }
+    }
+    &#{__illustration} {
+      width: 100%;
+    }
+    // Discount section
+    .discount-section {
+      width: 80%;
+      max-width: 230px;
+      background-color: $why-us-icon-bg-color;
+      @include flexbox($jtf: space-between);
+      border-radius: 30px;
+      padding: 5px 0px;
+
+      &#{__discount} {
+        display: inline-block;
+        padding: 5px;
+        margin-left: 5px;
+        border-radius: 30px;
+        width: 30%;
+        font-size: 1rem;
+        background-color: #fff;
+        color: $body-bg-color;
+        font-weight: 500;
+      }
+      &#{__description} {
+        font-size: 1rem;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.main-header-content-container {
+  width: 100%;
+  @include border;
+}
+.header-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
