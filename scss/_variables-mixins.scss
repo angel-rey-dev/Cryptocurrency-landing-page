@@ -1,0 +1,42 @@
+// -------- Variables -------------
+
+$body-bg-color: #0f054c;
+$btn-bg-color: #3671e9;
+$span-txt-color: #bdbdbd;
+
+// Why us section
+$why-us-icon-color: #4097f8;
+$why-us-icon-bg-color: #3c308a;
+
+// Cryptocurrencies section
+$bitcoin-icon-bg-color: #f9aa4b;
+$ethereum-icon-bg-color: #1181e8;
+
+// Features section
+$features-section-bg-color: #35068c;
+
+// CTA section
+$cta-section-card-bg-color: #3671e9;
+$cta-section-bg-color: linear-gradient(180deg, #280766, #0d0d28);
+
+// Footer
+$footer-bg-color: #0d0d2b;
+$footer-icon-color: #eeeeee;
+$footer-icon-bg-color: #28285a;
+
+// ------------- Mixins --------------------
+@mixin button($width: 120px, $pd-y: 10px, $pd-x: 10px, $bdr-r: 25px) {
+  width: $width;
+  padding: $pd-y $pd-x;
+  color: $btn-bg-color;
+  border-radius: $bdr-r;
+}
+@mixin flexbox($flow: row wrap, $jtf: center, $algn-items: center) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $jtf;
+  align-items: $algn-items;
+}
+@mixin border($color) {
+  border: 1px solid $color;
+}
