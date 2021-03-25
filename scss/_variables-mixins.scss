@@ -37,6 +37,6 @@ $footer-icon-bg-color: #28285a;
   justify-content: $jtf;
   align-items: $algn-items;
 }
-@mixin border($color) {
+@mixin border($color:magenta) {
   border: 1px solid $color;
 }
