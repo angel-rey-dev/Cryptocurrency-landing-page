@@ -67,7 +67,7 @@
       margin-top: 40px;
       font-size: 3rem;
       span {
-        color: $ethereum-icon-bg-color;
+        color: lighten($ethereum-icon-bg-color, 10%);
       }
     }
     &#{__description} {

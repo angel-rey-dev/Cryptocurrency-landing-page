@@ -1,0 +1,152 @@
+/* Main content styles*/
+.main-content {
+  width: 100%;
+  @include border(greenyellow);
+
+  // Why us section
+  .why-us-wrapper {
+    width: 100%;
+    @include border(orange);
+    @include flexbox;
+
+    // Stats section
+    .stats-section {
+      width: 80%;
+      @include border(cyan);
+      @include flexbox($flow: column nowrap);
+      margin-bottom: 75px;
+      &#{__reference} {
+        width: 50%;
+        @include border;
+        margin-bottom: 40px;
+        text-align: center;
+
+        .fas {
+          color: $btn-bg-color;
+          background-color: $footer-icon-bg-color;
+          font-size: 35px;
+          padding: 20px;
+          border-radius: 50%;
+        }
+        &#{__title} {
+          font-size: 2.5rem;
+          // width: 100%;
+          margin: 15px auto;
+        }
+        &#{__description} {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    // Why us content
+    .why-us-section {
+      width: 80%;
+      @include border(green);
+      margin-bottom: 75px;
+
+      &#{__content} {
+        width: 100%;
+        @include border;
+        text-align: center;
+
+        &#{__title} {
+          font-size: 2.5rem;
+          span {
+            color: lighten($features-section-bg-color, 40%);
+          }
+        }
+        &#{__description} {
+          font-size: 1.4rem;
+          margin: 20px auto;
+        }
+        &#{__btn} {
+          @include button;
+          margin: 20px auto 10px;
+        }
+      }
+      &#{__illustration} {
+        width: 100%;
+      }
+    }
+    // Benefits section
+    .benefits-section {
+      width: 80%;
+      @include border(magenta);
+      text-align: center;
+
+      &#{__title} {
+        font-size: 2.5rem;
+        span {
+          color: lighten($ethereum-icon-bg-color, 10%);
+        }
+      }
+      &#{__description} {
+        font-size: 1.4rem;
+        margin-top: 30px;
+      }
+      .card-info {
+        width: 100%;
+        @include border(cyan);
+        background-color: #fff;
+        color: #000;
+        border-radius: 10px;
+        padding: 25px 15px;
+        transform: translateY(50%);
+        text-align: left;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+        &#{__title} {
+          font-size: 1.5rem;
+          color: $ethereum-icon-bg-color;
+        }
+        &#{__description} {
+          font-size: 1.3rem;
+          font-weight: 700;
+          margin: 15px auto;
+          span {
+            color: lighten($ethereum-icon-bg-color, 10%);
+          }
+        }
+        &#{__advice} {
+          font-size: 1rem;
+          color: $span-txt-color;
+        }
+      }
+    }
+  }
+  // Cryptocurrencies section
+  .cryptocurrencies-section {
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    padding: 120px 0 50px;
+    @include flexbox;
+    text-align: center;
+
+    &#{__title} {
+      font-size: 2.4rem;
+      width: 80%;
+      margin-bottom: 50px;
+    }
+    .cryptocurrencies-info-cards {
+      width: 80%;
+      @include flexbox;
+      @include border;
+      .info-card{
+          width: 100%;
+          padding: 15px 0;
+          .fab{
+              font-size: 70px;
+
+              &:nth-child(1){
+                  color: $bitcoin-icon-bg-color;
+              }
+              &:nth-child(2){
+                  color: #fff;
+                  background-color: $ethereum-icon-bg-color;
+              }
+          }
+      }
+    }
+  }
+}
