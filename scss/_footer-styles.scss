@@ -20,9 +20,11 @@
   &#{-navbar} {
     width: 100%;
     @include border(greenyellow);
+    @include flexbox($jtf: space-between);
     margin-bottom: 50px;
 
     &#{__nav} {
+      width: 70%;
       list-style-type: none;
       margin-bottom: 35px;
 
@@ -56,6 +58,7 @@
     }
     &#{-icons} {
       width: 80%;
+      max-width: 340px;
       @include border(cyan);
       @include flexbox($jtf: space-between);
       .fab {
@@ -80,6 +83,7 @@
     }
     .social-icons {
       width: 100%;
+      max-width: 400px;
       @include border(orange);
       @include flexbox($jtf: space-evenly);
       .fab {

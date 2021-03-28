@@ -17,11 +17,13 @@
 
     &#{__logo} {
       width: 40%;
+      max-width: 160px;
       margin-right: auto;
     }
     &#{__login} {
       order: 1;
       width: 50%;
+      max-width: 240px;
       @include flexbox($jtf: space-between);
 
       &#{__login-btn} {
@@ -35,6 +37,7 @@
       }
       &#{__register-btn} {
         @include button($width: 60%, $fnt-size: 1.3rem);
+        max-width: 140px;
       }
     }
     &#{__nav} {
@@ -60,6 +63,7 @@
   &#{-content-principal} {
     @include border(orange);
     width: 100%;
+    max-width: 400px;
     @include flexbox;
     text-align: center;
 
@@ -119,6 +123,7 @@
 }
 .main-header-content-container {
   width: 100%;
+  @include flexbox;
   @include border;
 }
 .header-container {
