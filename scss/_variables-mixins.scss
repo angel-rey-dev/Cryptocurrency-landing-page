@@ -13,7 +13,7 @@ $bitcoin-icon-bg-color: #f9aa4b;
 $ethereum-icon-bg-color: #1181e8;
 
 // Features section
-$features-section-bg-color: #35068c;
+$features-section-bg-color: #27135e;
 
 // CTA section
 $cta-section-card-bg-color: #3671e9;
@@ -43,6 +43,6 @@ $footer-icon-bg-color: #28285a;
   align-items: $algn-items;
 }
 @mixin border($color:magenta) {
-  border: 1px solid $color;
+  border: 0px solid $color;
 }
 // 400 500 700

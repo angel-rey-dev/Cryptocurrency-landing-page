@@ -96,7 +96,7 @@
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 
         &#{__title} {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           color: $ethereum-icon-bg-color;
         }
         &#{__description} {
@@ -130,22 +130,153 @@
     }
     .cryptocurrencies-info-cards {
       width: 80%;
+      max-width: 290px;
       @include flexbox;
       @include border;
-      .info-card{
-          width: 100%;
-          padding: 15px 0;
-          .fab{
-              font-size: 70px;
+      .info-card {
+        width: 100%;
+        max-width: 290px;
+        @include flexbox;
+        padding: 15px 0;
+        margin-bottom: 50px;
+        border: 1px solid gray;
+        .fab {
+          font-size: 80px;
+          margin-top: 15px;
+        }
+        .fa-bitcoin {
+          color: $bitcoin-icon-bg-color;
+        }
+        .fa-ethereum {
+          color: #fff;
+          padding: 10px 20px;
+          font-size: 60px;
+          border-radius: 50%;
+          background-color: $ethereum-icon-bg-color;
+        }
 
-              &:nth-child(1){
-                  color: $bitcoin-icon-bg-color;
-              }
-              &:nth-child(2){
-                  color: #fff;
-                  background-color: $ethereum-icon-bg-color;
-              }
+        &#{__title} {
+          width: 100%;
+          font-size: 2rem;
+          margin: 30px auto 20px;
+          span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $span-txt-color;
           }
+        }
+        &#{__description} {
+          font-size: 1.4rem;
+          width: 70%;
+          color: darken($span-txt-color, 20%);
+        }
+        &#{__btn} {
+          @include button;
+          margin: 30px auto;
+          i {
+            margin-left: 10px;
+            color: $btn-bg-color;
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 5px;
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // Features section
+  .features-section {
+    width: 100%;
+    background: $features-section-bg-color;
+    background-repeat: no-repeat;
+    @include border(greenyellow);
+    padding: 50px 0;
+    @include flexbox;
+    text-align: center;
+
+    &#{__title} {
+      font-size: 2.4rem;
+      width: 80%;
+      margin-bottom: 75px;
+    }
+
+    .invest-smart-article {
+      width: 80%;
+      @include border(rgb(255, 38, 0));
+      @include flexbox;
+      margin-bottom: 75px;
+
+      &#{__content} {
+        width: 100%;
+        @include border;
+        margin-bottom: 50px;
+        @include flexbox;
+        &#{__title} {
+          font-size: 2rem;
+        }
+        &#{__description} {
+          font-size: 1.4rem;
+          width: 80%;
+          margin: 25px auto;
+        }
+        &#{__btn} {
+          @include button;
+        }
+      }
+      &#{__graphic} {
+        width: 100%;
+      }
+    }
+
+    .detailed-stats-article {
+      @extend .invest-smart-article;
+
+      &#{__content} {
+        width: 100%;
+        @include border;
+        margin-bottom: 50px;
+        @include flexbox;
+        &#{__title} {
+          font-size: 2rem;
+        }
+        &#{__description} {
+          font-size: 1.4rem;
+          width: 80%;
+          margin: 25px auto;
+        }
+        &#{__btn} {
+          @include button;
+        }
+      }
+      &#{__graphic} {
+        width: 100%;
+      }
+    }
+
+    .grow-profit-article {
+      @extend .invest-smart-article;
+
+      &#{__content} {
+        width: 100%;
+        @include border;
+        margin-bottom: 50px;
+        @include flexbox;
+        &#{__title} {
+          font-size: 2rem;
+        }
+        &#{__description} {
+          font-size: 1.4rem;
+          width: 80%;
+          margin: 25px auto;
+        }
+        &#{__btn} {
+          @include button;
+        }
+      }
+      &#{__graphic} {
+        width: 100%;
       }
     }
   }
