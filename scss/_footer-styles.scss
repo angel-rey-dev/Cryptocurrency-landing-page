@@ -1,0 +1,94 @@
+/* Main footer styles*/
+.footer-container {
+  width: 80%;
+  @include border;
+  margin-right: auto;
+  margin-left: auto;
+  @include flexbox($flow: column nowrap);
+}
+.main-footer {
+  width: 100%;
+  @include border;
+  background-color: $footer-bg-color;
+
+  &#{__logo} {
+    width: 130px;
+    margin-bottom: 35px;
+  }
+
+  // Navbar
+  &#{-navbar} {
+    width: 100%;
+    @include border(greenyellow);
+    margin-bottom: 50px;
+
+    &#{__nav} {
+      list-style-type: none;
+      margin-bottom: 35px;
+
+      &#{__title} {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      &#{__item} {
+        margin-bottom: 10px;
+      }
+      &#{__link} {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  // Payment systems section
+  .payment-systems {
+    width: 100%;
+    @include border(orange);
+    @include flexbox($flow: column nowrap);
+    margin-bottom: 50px;
+
+    &#{__title} {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &#{-icons} {
+      width: 80%;
+      @include border(cyan);
+      @include flexbox($jtf: space-between);
+      .fab {
+        font-size: 50px;
+        color: #fff;
+      }
+    }
+  }
+
+  // Copy and social links
+  .copy-and-social {
+    width: 100%;
+    @include border(cyan);
+    @include flexbox;
+    margin-bottom: 20px;
+
+    &#{__copy} {
+      text-align: center;
+      width: 100%;
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
+    .social-icons {
+      width: 100%;
+      @include border(orange);
+      @include flexbox($jtf: space-evenly);
+      .fab {
+        background-color: $footer-icon-bg-color;
+        color: $footer-icon-color;
+        font-size: 1.6rem;
+        padding: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

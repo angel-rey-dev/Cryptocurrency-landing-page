@@ -1,6 +1,6 @@
 // -------- Variables -------------
 
-$body-bg-color: #0f054c;
+$body-bg-color: linear-gradient(#0f054c 50%, #0d0d2b);
 $btn-bg-color: #3671e9;
 $span-txt-color: #979797;
 
@@ -42,6 +42,6 @@ $footer-icon-bg-color: #28285a;
   align-items: $algn-items;
 }
 @mixin border($color:magenta) {
-  border: 0px solid $color;
+  border: 1px solid $color;
 }
 // 400 500 700
