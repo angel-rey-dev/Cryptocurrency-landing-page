@@ -92,3 +92,20 @@
     }
   }
 }
+
+// Attribution footer
+.attribution {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: $footer-bg-color;
+  font-weight: 500;
+  a {
+    display: inline-block;
+    margin-left: 5px;
+    color: darken($bitcoin-icon-bg-color, 20%);
+  }
+}
