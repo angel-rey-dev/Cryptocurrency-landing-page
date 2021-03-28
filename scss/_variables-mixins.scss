@@ -13,11 +13,10 @@ $bitcoin-icon-bg-color: #f9aa4b;
 $ethereum-icon-bg-color: #1181e8;
 
 // Features section
-$features-section-bg-color: #27135e;
+$features-section-bg-color: linear-gradient(180deg, #280766, #0d0d2b);
 
 // CTA section
-$cta-section-card-bg-color: #3671e9;
-$cta-section-bg-color: linear-gradient(180deg, #280766, #0d0d28);
+$cta-section-card-bg-color: #1672fd;
 
 // Footer
 $footer-bg-color: #0d0d2b;
@@ -25,7 +24,7 @@ $footer-icon-color: #eeeeee;
 $footer-icon-bg-color: #28285a;
 
 // ------------- Mixins --------------------
-@mixin button($width: 150px, $pd-y: 8px, $pd-x: 10px, $bdr-r: 25px,$fnt-size:1.4rem) {
+@mixin button($width: 150px, $pd-y: 9px, $pd-x: 10px, $bdr-r: 25px,$fnt-size:1.4rem) {
   width: $width;
   padding: $pd-y $pd-x;
   background-color: $btn-bg-color;

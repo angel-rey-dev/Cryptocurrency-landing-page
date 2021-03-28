@@ -52,7 +52,7 @@
         &#{__title} {
           font-size: 2.5rem;
           span {
-            color: lighten($features-section-bg-color, 40%);
+            color: lighten($ethereum-icon-bg-color, 40%);
           }
         }
         &#{__description} {
@@ -192,7 +192,7 @@
     background: $features-section-bg-color;
     background-repeat: no-repeat;
     @include border(greenyellow);
-    padding: 50px 0;
+    padding: 50px 0 150px;
     @include flexbox;
     text-align: center;
 

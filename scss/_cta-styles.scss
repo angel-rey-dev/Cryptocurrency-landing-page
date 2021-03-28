@@ -1,0 +1,50 @@
+/* CTA styles */
+.cta-section {
+  width: 80%;
+  background-color: $cta-section-card-bg-color;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  transform: translateY(-50%);
+  padding: 25px;
+  @include flexbox;
+
+  &#{__content} {
+    @include border;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    &#{__title} {
+      font-size: 2rem;
+    }
+    &#{__description} {
+      margin: 20px auto;
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+
+  &#{__subscribe} {
+    @include border(greenyellow);
+    text-align: center;
+    &#{__input} {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+
+      &::placeholder {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+    &#{__btn} {
+      @include button;
+      background-color: #fff;
+      color: $body-bg-color;
+      font-weight: 500;
+    }
+  }
+}
