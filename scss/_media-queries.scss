@@ -13,6 +13,9 @@
         margin-top: 0;
         order: 1;
       }
+      &#{__login} {
+        width: 30%;
+      }
     }
 
     &#{-content-principal} {
@@ -90,6 +93,7 @@
 
       .invest-smart-article {
         justify-content: space-between;
+        margin-bottom: 75px;
 
         &#{__content} {
           width: 45%;
@@ -109,9 +113,10 @@
       }
       .detailed-stats-article {
         justify-content: space-between;
+        margin-bottom: 75px;
 
         &#{__content} {
-          width: 45%;
+          width: 40%;
           margin: 40px 0;
           justify-content: flex-start;
           text-align: left;
@@ -125,7 +130,6 @@
         &#{__graphic} {
           width: 55%;
           order: -1;
-          transform: translateX(-15%);
         }
       }
       .grow-profit-article {
@@ -204,7 +208,14 @@
 
 /* Media 1200px*/
 @media screen and (min-width: 1200px) {
-  /* Main header styles*/
+  .main-container {
+    padding: 50px 0;
+  }
+
+  /* Main header styles */
+  .header-container {
+    max-width: 1200px;
+  }
   .main-header {
     &#{-navbar} {
       &#{__login} {
@@ -240,14 +251,16 @@
         max-width: 1100px;
       }
       .why-us-section {
-        max-width: 80%;
+        width: 80%;
+        max-width: 1200px;
+
         &#{__content} {
           width: 40%;
           &#{__title} {
-            font-size: 3.5rem;
+            font-size: 3.3rem;
           }
           &#{__description} {
-            font-size: 2rem;
+            font-size: 1.8rem;
             line-height: 25px;
           }
           &#{__btn} {
@@ -262,22 +275,22 @@
       .benefits-section {
         flex-flow: column nowrap;
         &#{__title} {
-          font-size: 3.5rem;
+          font-size: 3.3rem;
         }
         &#{__description} {
-          font-size: 2rem;
+          font-size: 1.7rem;
         }
         .card-info {
           max-width: 650px;
           padding: 35px;
           &#{__title} {
-            font-size: 2rem;
+            font-size: 1.8rem;
           }
           &#{__description} {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
           }
           &#{__advice} {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
           }
         }
       }
@@ -287,12 +300,73 @@
     .cryptocurrencies-section {
       flex-flow: column nowrap;
 
-      &#{__title}{
+      &#{__title} {
         font-size: 3rem;
         margin: 50px auto;
       }
       .cryptocurrencies-info-cards {
-      max-width: 1150px;
+        max-width: 1150px;
+      }
+    }
+
+    // Features section
+    .features-section {
+      &#{__title} {
+        font-size: 3.5rem;
+        max-width: 700px;
+      }
+      .invest-smart-article,
+      .detailed-stats-article,
+      .grow-profit-article {
+        max-width: 1100px;
+        justify-content: space-evenly;
+        &#{__content} {
+          width: 35%;
+          margin: 0;
+          &#{__title} {
+            font-size: 3rem;
+          }
+          &#{__description} {
+            font-size: 1.8rem;
+          }
+          &#{__btn} {
+            padding: 15px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  /* CTA styles */
+  .cta-section {
+    max-width: 850px;
+    &#{__content} {
+      width: 30%;
+    }
+    &#{__subscribe} {
+      justify-content: space-evenly;
+      width: 60%;
+      &#{__input} {
+        width: 55%;
+      }
+      &#{__btn} {
+        padding: 15px 10px;
+      }
+    }
+  }
+
+  /* Main footer styles*/
+  .footer-container {
+    max-width: 1200px;
+  }
+  .main-footer {
+    &#{-navbar} {
+      max-width: 300px;
+    }
+    .payment-systems {
+      max-width: 300px;
+      &#{-icons} {
+        width: 80%;
       }
     }
   }
