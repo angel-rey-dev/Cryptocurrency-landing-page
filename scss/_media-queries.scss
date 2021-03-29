@@ -132,4 +132,19 @@
   }
 
   /* CTA styles */
+  .cta-section{
+      max-width: 750px;
+      justify-content: space-between;
+      &#{__content}{
+          width: 50%;
+          margin: 0;
+          text-align: left;
+
+      }
+      &#{__subscribe}{
+          width: 45%;
+          margin: 0;
+          @include flexbox;
+      }
+  }
 }

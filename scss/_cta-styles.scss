@@ -3,10 +3,13 @@
   width: 80%;
   max-width: 400px;
   background-color: $cta-section-card-bg-color;
-  margin-right: auto;
-  margin-left: auto;
+  background-image: url(../assets/why-us-section-assets/why-us-pattern2.png),
+    url(../assets/why-us-section-assets/why-us-pattern3.png);
+  background-repeat: no-repeat;
+  background-position: right bottom, left top;
+  background-size: 150px;
+  margin: 25px auto 75px;
   border-radius: 10px;
-  transform: translateY(-50%);
   padding: 25px;
   @include flexbox;
 
@@ -34,7 +37,7 @@
       border: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       margin-bottom: 20px;
-      padding-bottom: 5px;
+      padding: 10px 5px;
 
       &::placeholder {
         color: #fff;
