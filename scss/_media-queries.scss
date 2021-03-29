@@ -1,6 +1,9 @@
 /* Media 768px*/
 @media screen and (min-width: 768px) {
   /* Main header styles*/
+  .header-container {
+    max-width: 80%;
+  }
   .main-header {
     &#{-navbar} {
       justify-content: space-between;
@@ -53,12 +56,28 @@
           width: 55%;
         }
       }
+      .benefits-section {
+        max-width: 80%;
+        @include flexbox;
+        &#{__title} {
+          width: 60%;
+        }
+        &#{__description} {
+          width: 60%;
+        }
+        .card-info {
+          max-width: 50%;
+        }
+      }
     }
     // Cryptocurrencies section
     .cryptocurrencies-section {
+      &#{__title} {
+        width: 100%;
+      }
       .cryptocurrencies-info-cards {
         width: 95%;
-        max-width: 850px;
+        max-width: 1050px;
       }
     }
 
@@ -178,6 +197,102 @@
       .social-icons {
         max-width: 200px;
         justify-content: space-between;
+      }
+    }
+  }
+}
+
+/* Media 1200px*/
+@media screen and (min-width: 1200px) {
+  /* Main header styles*/
+  .main-header {
+    &#{-navbar} {
+      &#{__login} {
+        &#{__register-btn} {
+          padding: 15px 10px;
+        }
+      }
+    }
+    &#{-content-principal} {
+      &#{__title} {
+        font-size: 4rem;
+        line-height: 50px;
+      }
+      &#{__description} {
+        font-size: 1.8rem;
+        line-height: 30px;
+      }
+      &#{__btn} {
+        padding: 15px;
+      }
+      &#{__illustration} {
+        width: 58%;
+      }
+    }
+  }
+
+  /* Main content styles*/
+  .main-content {
+    // Why us section
+    .why-us-wrapper {
+      flex-flow: column nowrap;
+      .stats-section {
+        max-width: 1100px;
+      }
+      .why-us-section {
+        max-width: 80%;
+        &#{__content} {
+          width: 40%;
+          &#{__title} {
+            font-size: 3.5rem;
+          }
+          &#{__description} {
+            font-size: 2rem;
+            line-height: 25px;
+          }
+          &#{__btn} {
+            margin: 20px 0;
+            padding: 15px 10px;
+          }
+        }
+        &#{__illustration} {
+          width: 60%;
+        }
+      }
+      .benefits-section {
+        flex-flow: column nowrap;
+        &#{__title} {
+          font-size: 3.5rem;
+        }
+        &#{__description} {
+          font-size: 2rem;
+        }
+        .card-info {
+          max-width: 650px;
+          padding: 35px;
+          &#{__title} {
+            font-size: 2rem;
+          }
+          &#{__description} {
+            font-size: 2.5rem;
+          }
+          &#{__advice} {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+
+    // Cryptocurrencies section
+    .cryptocurrencies-section {
+      flex-flow: column nowrap;
+
+      &#{__title}{
+        font-size: 3rem;
+        margin: 50px auto;
+      }
+      .cryptocurrencies-info-cards {
+      max-width: 1150px;
       }
     }
   }
