@@ -1,0 +1,135 @@
+/* Media 768px*/
+@media screen and (min-width: 768px) {
+  /* Main header styles*/
+  .main-header {
+    &#{-navbar} {
+      justify-content: space-between;
+      &#{__nav} {
+        width: 40%;
+        max-width: 290px;
+        margin-top: 0;
+        order: 1;
+      }
+    }
+
+    &#{-content-principal} {
+      width: 50%;
+      justify-content: flex-start;
+      text-align: left;
+      &#{__illustration} {
+        width: 50%;
+      }
+    }
+  }
+  .main-header-content-container {
+    justify-content: space-between;
+  }
+
+  /* Main content styles*/
+  .main-content {
+    // Why us section
+    .why-us-wrapper {
+      .stats-section {
+        margin-top: 50px;
+        width: 90%;
+        flex-flow: row nowrap;
+        &#{__reference} {
+          width: 30%;
+          margin-bottom: 0;
+        }
+      }
+      .why-us-section {
+        width: 90%;
+        max-width: 750px;
+        @include flexbox($jtf: space-between);
+        &#{__content} {
+          width: 45%;
+          order: 1;
+          @include flexbox($jtf: flex-start);
+          text-align: left;
+          margin: 25px 0;
+        }
+        &#{__illustration} {
+          width: 55%;
+        }
+      }
+    }
+    // Cryptocurrencies section
+    .cryptocurrencies-section {
+      .cryptocurrencies-info-cards {
+        width: 95%;
+        max-width: 850px;
+      }
+    }
+
+    // Features section
+    .features-section {
+      &#{__title} {
+        font-size: 3rem;
+        max-width: 580px;
+      }
+
+      .invest-smart-article {
+        justify-content: space-between;
+
+        &#{__content} {
+          width: 45%;
+          margin: 40px 0;
+          justify-content: flex-start;
+          text-align: left;
+          &#{__title} {
+            font-size: 2.6rem;
+          }
+          &#{__description} {
+            margin: 25px 0;
+          }
+        }
+        &#{__graphic} {
+          width: 50%;
+        }
+      }
+      .detailed-stats-article {
+        justify-content: space-between;
+
+        &#{__content} {
+          width: 45%;
+          margin: 40px 0;
+          justify-content: flex-start;
+          text-align: left;
+          &#{__title} {
+            font-size: 2.6rem;
+          }
+          &#{__description} {
+            margin: 25px 0;
+          }
+        }
+        &#{__graphic} {
+          width: 55%;
+          order: -1;
+          transform: translateX(-15%);
+        }
+      }
+      .grow-profit-article {
+        justify-content: space-between;
+
+        &#{__content} {
+          width: 45%;
+          margin: 40px 0;
+          justify-content: flex-start;
+          text-align: left;
+          &#{__title} {
+            font-size: 2.6rem;
+          }
+          &#{__description} {
+            margin: 25px 0;
+          }
+        }
+        &#{__graphic} {
+          width: 55%;
+        }
+      }
+    }
+  }
+
+  /* CTA styles */
+}

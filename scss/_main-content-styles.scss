@@ -142,19 +142,18 @@
     }
     .cryptocurrencies-info-cards {
       width: 80%;
-      // max-width: 290px;
+      max-width: 400px;
       @include flexbox($jtf: space-evenly);
       @include border;
       .info-card {
         width: 100%;
         max-width: 290px;
         @include flexbox;
-        padding: 15px 0;
+        padding: 30px 0 15px;
         margin-bottom: 50px;
         border: 1px solid gray;
         .fab {
           font-size: 80px;
-          margin-top: 15px;
         }
         .fa-bitcoin {
           color: $bitcoin-icon-bg-color;
@@ -205,13 +204,11 @@
     background-image: url(../assets/features-section-assets/features-section-pattern1.png),
       url(../assets/features-section-assets/features-section-pattern2.png),
       url(../assets/header-assets/header-pattern1.svg);
-    background-repeat: no-repeat;
     background-position: right bottom, left top, right center;
-    background-size: 25%;
     background-size: contain;
     background-repeat: no-repeat;
     @include border(rgb(0, 255, 255));
-    padding: 50px 0 150px;
+    padding: 50px 0;
     @include flexbox;
     text-align: center;
 
