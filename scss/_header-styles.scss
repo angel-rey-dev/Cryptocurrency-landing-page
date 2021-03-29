@@ -6,12 +6,10 @@
   background-size: contain;
   background-position: center;
   margin-bottom: 75px;
-  @include border(cyan);
 
   // Navbar
   &#{-navbar} {
     width: 100%;
-    @include border(greenyellow);
     @include flexbox;
     margin-bottom: 50px;
 
@@ -34,10 +32,28 @@
         text-align: center;
         text-decoration: none;
         border-right: 1px solid rgba(255, 255, 255, 0.664);
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+        }
+        &:active {
+          color: lighten($bitcoin-icon-bg-color, 10%);
+        }
       }
       &#{__register-btn} {
         @include button($width: 60%, $fnt-size: 1.3rem);
         max-width: 140px;
+
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          background-color: lighten($btn-bg-color, 10%);
+        }
+        &:active {
+          transform: scale(0.95);
+          background-color: darken($btn-bg-color, 30%);
+        }
       }
     }
     &#{__nav} {
@@ -55,13 +71,20 @@
         color: inherit;
         text-decoration: none;
         display: inline-block;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+        }
+        &:active {
+          color: lighten($bitcoin-icon-bg-color, 10%);
+        }
       }
     }
   }
   //   Header content
 
   &#{-content-principal} {
-    @include border(orange);
     width: 100%;
     max-width: 400px;
     @include flexbox;
@@ -82,6 +105,15 @@
     &#{__btn} {
       @include button;
 
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        background-color: lighten($btn-bg-color, 10%);
+      }
+      &:active {
+        transform: scale(0.95);
+        background-color: darken($btn-bg-color, 30%);
+      }
       i {
         margin-left: 10px;
         color: $btn-bg-color;
@@ -102,7 +134,16 @@
       @include flexbox($jtf: space-between);
       border-radius: 30px;
       padding: 5px 0px;
+      animation: beat 1s 2s ease-in-out alternate 15;
 
+      @keyframes beat {
+        from {
+          transform: scale(1.05);
+        }
+        to {
+          transform: scale(0.95);
+        }
+      }
       &#{__discount} {
         display: inline-block;
         padding: 5px;
@@ -121,10 +162,10 @@
     }
   }
 }
+
 .main-header-content-container {
   width: 100%;
   @include flexbox;
-  @include border;
 }
 .header-container {
   width: 90%;

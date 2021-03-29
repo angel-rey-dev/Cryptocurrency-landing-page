@@ -41,6 +41,6 @@ $footer-icon-color: #eeeeee;
   align-items: $algn-items;
 }
 @mixin border($color:magenta) {
-  border: 0px solid $color;
+  border: 1px solid $color;
 }
 // 400 500 700
