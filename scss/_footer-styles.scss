@@ -1,14 +1,12 @@
 /* Main footer styles*/
 .footer-container {
   width: 80%;
-  @include border;
   margin-right: auto;
   margin-left: auto;
   @include flexbox($flow: column nowrap);
 }
 .main-footer {
   width: 100%;
-  @include border;
   background-color: $footer-bg-color;
 
   &#{__logo} {
@@ -19,7 +17,6 @@
   // Navbar
   &#{-navbar} {
     width: 100%;
-    @include border(greenyellow);
     @include flexbox($jtf: space-between);
     margin-bottom: 50px;
 
@@ -40,6 +37,14 @@
         color: #fff;
         font-size: 1.4rem;
         font-weight: 400;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+        }
+        &:active {
+          color: lighten($bitcoin-icon-bg-color, 10%);
+        }
       }
     }
   }
@@ -47,7 +52,6 @@
   // Payment systems section
   .payment-systems {
     width: 100%;
-    @include border(orange);
     @include flexbox($flow: column nowrap);
     margin-bottom: 50px;
 
@@ -59,11 +63,19 @@
     &#{-icons} {
       width: 80%;
       max-width: 340px;
-      @include border(cyan);
       @include flexbox($jtf: space-between);
       .fab {
         font-size: 50px;
         color: #fff;
+        cursor: pointer;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+        }
+        &:active {
+          color: lighten($bitcoin-icon-bg-color, 10%);
+        }
       }
     }
   }
@@ -71,7 +83,6 @@
   // Copy and social links
   .copy-and-social {
     width: 100%;
-    @include border(cyan);
     @include flexbox;
     margin-bottom: 20px;
 
@@ -84,13 +95,21 @@
     .social-icons {
       width: 100%;
       max-width: 400px;
-      @include border(orange);
       @include flexbox($jtf: space-evenly);
       .fab {
         color: $footer-icon-color;
         font-size: 1.6rem;
         padding: 10px;
         border-radius: 50%;
+        cursor: pointer;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+        }
+        &:active {
+          color: lighten($bitcoin-icon-bg-color, 10%);
+        }
       }
     }
   }

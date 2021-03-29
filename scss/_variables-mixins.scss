@@ -40,7 +40,3 @@ $footer-icon-color: #eeeeee;
   justify-content: $jtf;
   align-items: $algn-items;
 }
-@mixin border($color:magenta) {
-  border: 1px solid $color;
-}
-// 400 500 700
