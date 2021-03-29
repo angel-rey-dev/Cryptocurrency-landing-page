@@ -21,7 +21,6 @@ $cta-section-card-bg-color: #1672fd;
 // Footer
 $footer-bg-color: #0d0d2b;
 $footer-icon-color: #eeeeee;
-$footer-icon-bg-color: #28285a;
 
 // ------------- Mixins --------------------
 @mixin button($width: 150px, $pd-y: 9px, $pd-x: 10px, $bdr-r: 25px,$fnt-size:1.4rem) {
@@ -42,6 +41,6 @@ $footer-icon-bg-color: #28285a;
   align-items: $algn-items;
 }
 @mixin border($color:magenta) {
-  border: 1px solid $color;
+  border: 0px solid $color;
 }
 // 400 500 700

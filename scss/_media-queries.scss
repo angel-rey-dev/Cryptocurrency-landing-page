@@ -132,19 +132,53 @@
   }
 
   /* CTA styles */
-  .cta-section{
-      max-width: 750px;
-      justify-content: space-between;
-      &#{__content}{
-          width: 50%;
-          margin: 0;
-          text-align: left;
+  .cta-section {
+    max-width: 750px;
+    justify-content: space-between;
+    &#{__content} {
+      width: 50%;
+      margin: 0;
+      text-align: left;
+    }
+    &#{__subscribe} {
+      width: 45%;
+      margin: 0;
+      @include flexbox;
+    }
+  }
 
+  /* Main footer styles*/
+  .footer-container {
+    width: 90%;
+    max-width: 800px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .main-footer {
+    &#{-navbar} {
+      width: 40%;
+      align-items: flex-start;
+      &#{__nav} {
+        width: 50%;
       }
-      &#{__subscribe}{
-          width: 45%;
-          margin: 0;
-          @include flexbox;
+    }
+    .payment-systems {
+      width: 35%;
+      &#{-icons} {
+        width: 100%;
       }
+    }
+    .copy-and-social {
+      justify-content: space-between;
+      &#{__copy} {
+        width: 200px;
+        margin-bottom: 0;
+      }
+      .social-icons {
+        max-width: 200px;
+        justify-content: space-between;
+      }
+    }
   }
 }

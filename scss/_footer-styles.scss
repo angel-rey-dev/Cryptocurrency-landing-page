@@ -87,7 +87,6 @@
       @include border(orange);
       @include flexbox($jtf: space-evenly);
       .fab {
-        background-color: $footer-icon-bg-color;
         color: $footer-icon-color;
         font-size: 1.6rem;
         padding: 10px;
