@@ -6,7 +6,13 @@
   // Why us section
   .why-us-wrapper {
     width: 100%;
-    @include border(orange);
+    @include border(rgb(0, 255, 0));
+    background-image: url(../assets/why-us-section-assets/why-us-pattern1.png),
+      url(../assets/why-us-section-assets/why-us-pattern2.png),
+      url(../assets/why-us-section-assets/why-us-pattern3.png);
+    background-repeat: no-repeat;
+    background-position: left center, right bottom, right top;
+    background-size: 250px;
     @include flexbox;
 
     // Stats section
@@ -131,13 +137,13 @@
     &#{__title} {
       font-size: 2.4rem;
       width: 80%;
-      max-width: 400px;
+      max-width: 500px;
       margin-bottom: 50px;
     }
     .cryptocurrencies-info-cards {
       width: 80%;
-      max-width: 290px;
-      @include flexbox;
+      // max-width: 290px;
+      @include flexbox($jtf: space-evenly);
       @include border;
       .info-card {
         width: 100%;
@@ -196,8 +202,15 @@
   .features-section {
     width: 100%;
     background: $features-section-bg-color;
+    background-image: url(../assets/features-section-assets/features-section-pattern1.png),
+      url(../assets/features-section-assets/features-section-pattern2.png),
+      url(../assets/header-assets/header-pattern1.svg);
     background-repeat: no-repeat;
-    @include border(greenyellow);
+    background-position: right bottom, left top, right center;
+    background-size: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include border(rgb(0, 255, 255));
     padding: 50px 0 150px;
     @include flexbox;
     text-align: center;
