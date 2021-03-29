@@ -1,7 +1,5 @@
 /* Media 768px*/
 @media screen and (min-width: 768px) {
-
-
   /* Main header styles*/
   .header-container {
     max-width: 80%;
@@ -25,7 +23,7 @@
       justify-content: flex-start;
       text-align: left;
       &#{__illustration} {
-        width: 50%;     
+        width: 50%;
       }
     }
   }
