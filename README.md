@@ -1,9 +1,12 @@
-# Cryptocurrency company landing page
+# Landing page concept for Cryptocurrency company
 
-![Desktop design](/design/desktop-preview.png)
+## 🚀🚀 Project URL: http://jose-angel-rey-concept-for-cryptocurrency-company.vercel.app/
 
-## Landing page concept for Cryptocurrency company
+## 📧 [Contact me](dev.joseangel.rey@gmail.com) 
 
-### 🚀🚀 Project URL: https://jose-angel-rey-concept-for-data-processing-company.vercel.app/
+### Desktop preview
+![Desktop design](/design/Desktop-preview.png)
 
-#### 📧 [Contact me](dev.joseangel.rey@gmail.com) 
+### Mobile preview
+![Mobile design](/design/Mobile-preview.png)
+
