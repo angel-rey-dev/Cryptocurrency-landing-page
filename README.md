@@ -4,6 +4,8 @@
 
 ## 🚀🚀 URL: http://jose-angel-rey-concept-for-cryptocurrency-company.vercel.app/
 
+## Design provided by: 
+
 ## 📧 [Contact me](mailto:dev.joseangel.rey@gmail.com) 
 
 ### Desktop preview
