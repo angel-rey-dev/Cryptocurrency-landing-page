@@ -2,15 +2,19 @@
 Github: https://github.com/Jose-Angel-Rey
 ------------------------------------*/
 
-// Variables & Mixins
-@import "variables-mixins";
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins\ ";
 
-// Styles
-@import "base-styles";
-@import "header-styles";
-@import "main-content-styles";
-@import "cta-styles";
-@import "footer-styles";
+//  Base
+@import "base/base";
+
+// Layout
+@import "layout/header";
+@import "layout/main-content";
+@import "layout/cta";
+@import "layout/footer";
 
 // Media queries
-@import "media-queries";
+@import "media-queries/media-768px";
+@import "media-queries/media-1200px";
