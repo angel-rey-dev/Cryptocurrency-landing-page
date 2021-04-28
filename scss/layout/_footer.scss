@@ -1,0 +1,133 @@
+/* Main footer styles*/
+.footer-container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  @include flexbox($flow: column nowrap);
+}
+.main-footer {
+  width: 100%;
+  background-color: $footer-bg-color;
+
+  &#{__logo} {
+    width: 130px;
+    margin-bottom: 35px;
+  }
+
+  // Navbar
+  &#{-navbar} {
+    width: 100%;
+    @include flexbox($jtf: space-between);
+    margin-bottom: 50px;
+
+    &#{__nav} {
+      width: 70%;
+      list-style-type: none;
+      margin-bottom: 35px;
+
+      &#{__title} {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      &#{__item} {
+        margin-bottom: 10px;
+      }
+      &#{__link} {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+        }
+        &:active {
+          color: lighten($bitcoin-icon-bg-color, 10%);
+        }
+      }
+    }
+  }
+
+  // Payment systems section
+  .payment-systems {
+    width: 100%;
+    @include flexbox($flow: column nowrap);
+    margin-bottom: 50px;
+
+    &#{__title} {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &#{-icons} {
+      width: 80%;
+      max-width: 340px;
+      @include flexbox($jtf: space-between);
+      .fab {
+        font-size: 50px;
+        color: #fff;
+        cursor: pointer;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+        }
+        &:active {
+          color: lighten($bitcoin-icon-bg-color, 10%);
+        }
+      }
+    }
+  }
+
+  // Copy and social links
+  .copy-and-social {
+    width: 100%;
+    @include flexbox;
+    margin-bottom: 20px;
+
+    &#{__copy} {
+      text-align: center;
+      width: 100%;
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
+    .social-icons {
+      width: 100%;
+      max-width: 400px;
+      @include flexbox($jtf: space-evenly);
+      .fab {
+        color: $footer-icon-color;
+        font-size: 1.6rem;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+        }
+        &:active {
+          color: lighten($bitcoin-icon-bg-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+// Attribution footer
+.attribution {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: $footer-bg-color;
+  font-weight: 500;
+  a {
+    display: inline-block;
+    margin-left: 5px;
+    color: darken($bitcoin-icon-bg-color, 20%);
+  }
+}

@@ -1,0 +1,72 @@
+/* CTA styles */
+.cta-section {
+  width: 80%;
+  max-width: 400px;
+  background-color: $cta-section-card-bg-color;
+  background-image: url(../assets/why-us-section-assets/why-us-pattern2.png),
+    url(../assets/why-us-section-assets/why-us-pattern3.png);
+  background-repeat: no-repeat;
+  background-position: right bottom, left top;
+  background-size: 150px;
+  margin: -50px auto 75px;
+  border-radius: 10px;
+  padding: 25px;
+  @include flexbox;
+
+  &#{__content} {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    &#{__title} {
+      font-size: 2rem;
+    }
+    &#{__description} {
+      margin: 20px auto;
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+
+  &#{__subscribe} {
+    text-align: center;
+    &#{__input} {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      margin-bottom: 20px;
+      padding: 10px 5px;
+
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        border-bottom: 2px solid $bitcoin-icon-bg-color;
+      }
+      &:focus {
+        outline: none;
+        color: #fff;
+      }
+
+      &::placeholder {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+    &#{__btn} {
+      @include button;
+      background-color: #fff;
+      color: $footer-bg-color;
+      font-weight: 500;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        background-color: rgb(200, 200, 200);
+        color: #fff;
+      }
+      &:active {
+        transform: scale(0.95);
+        background-color: darken($btn-bg-color, 30%);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/* Base styles*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+.main-container {
+  width: 100%;
+  padding: 5% 0;
+  font-family: "Rubik", sans-serif;
+  background: $body-bg-color;
+  color: white;
+  overflow-x: hidden;
+}
