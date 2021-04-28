@@ -1,27 +1,3 @@
-// -------- Variables -------------
-
-$body-bg-color: linear-gradient(#0f054c 50%, #0d0d2b);
-$btn-bg-color: #3671e9;
-$span-txt-color: #979797;
-
-// Why us section
-$why-us-icon-color: #4097f8;
-$why-us-icon-bg-color: #3c308a;
-
-// Cryptocurrencies section
-$bitcoin-icon-bg-color: #f9aa4b;
-$ethereum-icon-bg-color: #1181e8;
-
-// Features section
-$features-section-bg-color: linear-gradient(180deg, #280766, #0d0d2b);
-
-// CTA section
-$cta-section-card-bg-color: #1672fd;
-
-// Footer
-$footer-bg-color: #0d0d2b;
-$footer-icon-color: #eeeeee;
-
 // ------------- Mixins --------------------
 @mixin button($width: 150px, $pd-y: 9px, $pd-x: 10px, $bdr-r: 25px,$fnt-size:1.4rem) {
   width: $width;
