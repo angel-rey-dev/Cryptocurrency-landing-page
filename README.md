@@ -2,8 +2,9 @@
 
 ## *** This landing page is only for educational purposes ****
 
-## 🚀🚀 URL: http://jose-angel-rey-concept-for-cryptocurrency-company.vercel.app/
+## 🚀URL🚀 : http://jose-angel-rey-concept-for-cryptocurrency-company.vercel.app/
 
+## Original design by: [Rizki Mulyawan](https://dribbble.com/mulyawan) 
 ## 📧 [Contact me](mailto:dev.joseangel.rey@gmail.com) 
 
 ### Desktop preview
