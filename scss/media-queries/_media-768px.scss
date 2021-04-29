@@ -1,7 +1,7 @@
 // --------  Media 768px  -------------
 
 @media screen and (min-width: 768px) {
-  /* Main header styles*/
+  // Main header styles
   .header-container {
     max-width: 80%;
   }
@@ -32,7 +32,7 @@
     justify-content: space-between;
   }
 
-  /* Main content styles*/
+  // Main content styles
   .main-content {
     // Why us section
     .why-us-wrapper {
@@ -155,7 +155,7 @@
     }
   }
 
-  /* CTA styles */
+  // CTA styles
   .cta-section {
     max-width: 750px;
     justify-content: space-between;
@@ -171,7 +171,7 @@
     }
   }
 
-  /* Main footer styles*/
+  // Main footer styles
   .footer-container {
     width: 90%;
     max-width: 800px;
