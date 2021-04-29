@@ -6,24 +6,24 @@
     max-width: 80%;
   }
   .main-header {
-    &#{-navbar} {
+    &-navbar {
       justify-content: space-between;
-      &#{__nav} {
+      &__nav {
         width: 40%;
         max-width: 290px;
         margin-top: 0;
         order: 1;
       }
-      &#{__login} {
+      &__login {
         width: 30%;
       }
     }
 
-    &#{-content-principal} {
+    &-content-principal {
       width: 50%;
       justify-content: flex-start;
       text-align: left;
-      &#{__illustration} {
+      &__illustration {
         width: 50%;
       }
     }
@@ -40,7 +40,7 @@
         margin-top: 50px;
         width: 90%;
         flex-flow: row nowrap;
-        &#{__reference} {
+        &__reference {
           width: 30%;
           margin-bottom: 0;
         }
@@ -49,24 +49,24 @@
         width: 90%;
         max-width: 750px;
         @include flexbox($jtf: space-between);
-        &#{__content} {
+        &__content {
           width: 45%;
           order: 1;
           @include flexbox($jtf: flex-start);
           text-align: left;
           margin: 25px 0;
         }
-        &#{__illustration} {
+        &__illustration {
           width: 55%;
         }
       }
       .benefits-section {
         max-width: 80%;
         @include flexbox;
-        &#{__title} {
+        &__title {
           width: 60%;
         }
-        &#{__description} {
+        &__description {
           width: 60%;
         }
         .card-info {
@@ -76,7 +76,7 @@
     }
     // Cryptocurrencies section
     .cryptocurrencies-section {
-      &#{__title} {
+      &__title {
         width: 100%;
       }
       .cryptocurrencies-info-cards {
@@ -87,7 +87,7 @@
 
     // Features section
     .features-section {
-      &#{__title} {
+      &__title {
         font-size: 3rem;
         max-width: 580px;
       }
@@ -96,19 +96,19 @@
         justify-content: space-between;
         margin-bottom: 75px;
 
-        &#{__content} {
+        &__content {
           width: 45%;
           margin: 40px 0;
           justify-content: flex-start;
           text-align: left;
-          &#{__title} {
+          &__title {
             font-size: 2.6rem;
           }
-          &#{__description} {
+          &__description {
             margin: 25px 0;
           }
         }
-        &#{__graphic} {
+        &__graphic {
           width: 50%;
         }
       }
@@ -116,19 +116,19 @@
         justify-content: space-between;
         margin-bottom: 75px;
 
-        &#{__content} {
+        &__content {
           width: 40%;
           margin: 40px 0;
           justify-content: flex-start;
           text-align: left;
-          &#{__title} {
+          &__title {
             font-size: 2.6rem;
           }
-          &#{__description} {
+          &__description {
             margin: 25px 0;
           }
         }
-        &#{__graphic} {
+        &__graphic {
           width: 55%;
           order: -1;
         }
@@ -136,19 +136,19 @@
       .grow-profit-article {
         justify-content: space-between;
 
-        &#{__content} {
+        &__content {
           width: 45%;
           margin: 40px 0;
           justify-content: flex-start;
           text-align: left;
-          &#{__title} {
+          &__title {
             font-size: 2.6rem;
           }
-          &#{__description} {
+          &__description {
             margin: 25px 0;
           }
         }
-        &#{__graphic} {
+        &__graphic {
           width: 55%;
         }
       }
@@ -159,12 +159,12 @@
   .cta-section {
     max-width: 750px;
     justify-content: space-between;
-    &#{__content} {
+    &__content {
       width: 50%;
       margin: 0;
       text-align: left;
     }
-    &#{__subscribe} {
+    &__subscribe {
       width: 45%;
       margin: 0;
       @include flexbox;
@@ -180,22 +180,22 @@
     align-items: flex-start;
   }
   .main-footer {
-    &#{-navbar} {
+    &-navbar {
       width: 40%;
       align-items: flex-start;
-      &#{__nav} {
+      &__nav {
         width: 50%;
       }
     }
     .payment-systems {
       width: 35%;
-      &#{-icons} {
+      &-icons {
         width: 100%;
       }
     }
     .copy-and-social {
       justify-content: space-between;
-      &#{__copy} {
+      &__copy {
         width: 200px;
         margin-bottom: 0;
       }
