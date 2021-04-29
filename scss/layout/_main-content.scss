@@ -1,4 +1,4 @@
-/* Main content styles*/
+// Main content styles
 .main-content {
   width: 100%;
 
@@ -18,7 +18,7 @@
       width: 80%;
       @include flexbox($flow: column nowrap);
       margin-bottom: 75px;
-      &#{__reference} {
+      &__reference {
         width: 50%;
         margin-bottom: 40px;
         text-align: center;
@@ -30,12 +30,12 @@
           padding: 20px;
           border-radius: 50%;
         }
-        &#{__title} {
+        &__title {
           font-size: 2.5rem;
           // width: 100%;
           margin: 15px auto;
         }
-        &#{__description} {
+        &__description {
           font-size: 1.4rem;
         }
       }
@@ -46,21 +46,21 @@
       max-width: 400px;
       margin-bottom: 75px;
 
-      &#{__content} {
+      &__content {
         width: 100%;
         text-align: center;
 
-        &#{__title} {
+        &__title {
           font-size: 2.5rem;
           span {
             color: lighten($ethereum-icon-bg-color, 40%);
           }
         }
-        &#{__description} {
+        &__description {
           font-size: 1.4rem;
           margin: 20px auto;
         }
-        &#{__btn} {
+        &__btn {
           @include button;
           margin: 20px auto 10px;
           transition: all 0.3s ease-in;
@@ -74,7 +74,7 @@
           }
         }
       }
-      &#{__illustration} {
+      &__illustration {
         width: 100%;
         animation-delay: 8s;
         animation-timing-function: ease-in-out;
@@ -87,13 +87,13 @@
       max-width: 400px;
       text-align: center;
 
-      &#{__title} {
+      &__title {
         font-size: 2.5rem;
         span {
           color: lighten($ethereum-icon-bg-color, 10%);
         }
       }
-      &#{__description} {
+      &__description {
         font-size: 1.4rem;
         margin-top: 30px;
       }
@@ -108,11 +108,11 @@
         text-align: left;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 
-        &#{__title} {
+        &__title {
           font-size: 1.4rem;
           color: $ethereum-icon-bg-color;
         }
-        &#{__description} {
+        &__description {
           font-size: 1.3rem;
           font-weight: 700;
           margin: 15px auto;
@@ -120,7 +120,7 @@
             color: lighten($ethereum-icon-bg-color, 10%);
           }
         }
-        &#{__advice} {
+        &__advice {
           font-size: 1rem;
           color: $span-txt-color;
         }
@@ -136,7 +136,7 @@
     @include flexbox;
     text-align: center;
 
-    &#{__title} {
+    &__title {
       font-size: 2.4rem;
       width: 80%;
       max-width: 500px;
@@ -184,7 +184,7 @@
           background-color: $ethereum-icon-bg-color;
         }
 
-        &#{__title} {
+        &__title {
           width: 100%;
           font-size: 2rem;
           margin: 30px auto 20px;
@@ -194,12 +194,12 @@
             color: $span-txt-color;
           }
         }
-        &#{__description} {
+        &__description {
           font-size: 1.4rem;
           width: 70%;
           color: darken($span-txt-color, 20%);
         }
-        &#{__btn} {
+        &__btn {
           @include button;
           margin: 30px auto;
           i {
@@ -229,7 +229,7 @@
     @include flexbox;
     text-align: center;
 
-    &#{__title} {
+    &__title {
       font-size: 2.4rem;
       width: 80%;
       max-width: 400px;
@@ -241,19 +241,19 @@
       @include flexbox;
       margin-bottom: 75px;
 
-      &#{__content} {
+      &__content {
         width: 100%;
         margin-bottom: 50px;
         @include flexbox;
-        &#{__title} {
+        &__title {
           font-size: 2rem;
         }
-        &#{__description} {
+        &__description {
           font-size: 1.4rem;
           width: 80%;
           margin: 25px auto;
         }
-        &#{__btn} {
+        &__btn {
           @include button;
           transition: all 0.3s ease-in;
 
@@ -266,7 +266,7 @@
           }
         }
       }
-      &#{__graphic} {
+      &__graphic {
         width: 100%;
       }
     }
@@ -274,19 +274,19 @@
     .detailed-stats-article {
       @extend .invest-smart-article;
 
-      &#{__content} {
+      &__content {
         width: 100%;
         margin-bottom: 50px;
         @include flexbox;
-        &#{__title} {
+        &__title {
           font-size: 2rem;
         }
-        &#{__description} {
+        &__description {
           font-size: 1.4rem;
           width: 80%;
           margin: 25px auto;
         }
-        &#{__btn} {
+        &__btn {
           @include button;
           transition: all 0.3s ease-in;
 
@@ -299,7 +299,7 @@
           }
         }
       }
-      &#{__graphic} {
+      &__graphic {
         width: 100%;
       }
     }
@@ -307,19 +307,19 @@
     .grow-profit-article {
       @extend .invest-smart-article;
 
-      &#{__content} {
+      &__content {
         width: 100%;
         margin-bottom: 50px;
         @include flexbox;
-        &#{__title} {
+        &__title {
           font-size: 2rem;
         }
-        &#{__description} {
+        &__description {
           font-size: 1.4rem;
           width: 80%;
           margin: 25px auto;
         }
-        &#{__btn} {
+        &__btn {
           @include button;
           transition: all 0.3s ease-in;
 
@@ -332,7 +332,7 @@
           }
         }
       }
-      &#{__graphic} {
+      &__graphic {
         width: 100%;
       }
     }
