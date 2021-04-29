@@ -4,8 +4,9 @@
 
 ## 🚀URL🚀 : http://jose-angel-rey-concept-for-cryptocurrency-company.vercel.app/
 
-## Original design by: [Rizki Mulyawan](https://dribbble.com/mulyawan) 
-## 📧 [Contact me](mailto:dev.joseangel.rey@gmail.com) 
+### Original design by: [Rizki Mulyawan](https://dribbble.com/mulyawan) 
+
+### 📧 [Contact me](mailto:dev.joseangel.rey@gmail.com) 
 
 ### Desktop preview
 ![Desktop design](/design/Desktop-preview.png)
