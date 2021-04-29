@@ -1,4 +1,4 @@
-/* Main header styles*/
+// Main header styles
 .main-header {
   width: 100%;
   background-image: url(../assets/header-assets/header-pattern1.svg);
@@ -8,23 +8,23 @@
   margin-bottom: 75px;
 
   // Navbar
-  &#{-navbar} {
+  &-navbar {
     width: 100%;
     @include flexbox;
     margin-bottom: 50px;
 
-    &#{__logo} {
+    &__logo {
       width: 40%;
       max-width: 160px;
       margin-right: auto;
     }
-    &#{__login} {
+    &__login {
       order: 1;
       width: 50%;
       max-width: 240px;
       @include flexbox($jtf: space-between);
 
-      &#{__login-btn} {
+      &__login-btn {
         width: 35%;
         color: #fff;
         font-size: 1.3rem;
@@ -41,7 +41,7 @@
           color: lighten($bitcoin-icon-bg-color, 10%);
         }
       }
-      &#{__register-btn} {
+      &__register-btn {
         @include button($width: 60%, $fnt-size: 1.3rem);
         max-width: 140px;
 
@@ -56,18 +56,18 @@
         }
       }
     }
-    &#{__nav} {
+    &__nav {
       margin-top: 15px;
       order: 2;
       width: 100%;
       list-style-type: none;
       @include flexbox($jtf: space-evenly);
 
-      &#{__item} {
+      &__item {
         color: #fff;
         font-size: 1.4rem;
       }
-      &#{__link} {
+      &__link {
         color: inherit;
         text-decoration: none;
         display: inline-block;
@@ -84,25 +84,25 @@
   }
   //   Header content
 
-  &#{-content-principal} {
+  &-content-principal {
     width: 100%;
     max-width: 400px;
     @include flexbox;
     text-align: center;
 
-    &#{__title} {
+    &__title {
       margin-top: 40px;
       font-size: 3rem;
       span {
         color: lighten($ethereum-icon-bg-color, 10%);
       }
     }
-    &#{__description} {
+    &__description {
       font-size: 1.4rem;
       margin: 25px auto;
       font-weight: 400;
     }
-    &#{__btn} {
+    &__btn {
       @include button;
 
       transition: all 0.3s ease-in;
@@ -123,7 +123,7 @@
         width: 25px;
       }
     }
-    &#{__illustration} {
+    &__illustration {
       width: 100%;
     }
     // Discount section
@@ -144,7 +144,7 @@
           transform: scale(0.95);
         }
       }
-      &#{__discount} {
+      &__discount {
         display: inline-block;
         padding: 5px;
         margin-left: 5px;
@@ -155,7 +155,7 @@
         color: $footer-bg-color;
         font-weight: 500;
       }
-      &#{__description} {
+      &__description {
         font-size: 1rem;
         margin-right: 10px;
       }
