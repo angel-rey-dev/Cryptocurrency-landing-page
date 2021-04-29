@@ -1,0 +1,18 @@
+// ------------- Mixins --------------------
+@mixin button($width: 150px, $pd-y: 9px, $pd-x: 10px, $bdr-r: 25px,$fnt-size:1.4rem) {
+  width: $width;
+  padding: $pd-y $pd-x;
+  background-color: $btn-bg-color;
+  color: #fff;
+  border-radius: $bdr-r;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: $fnt-size;
+}
+@mixin flexbox($flow: row wrap, $jtf: center, $algn-items: center) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $jtf;
+  align-items: $algn-items;
+}
