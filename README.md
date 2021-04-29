@@ -6,7 +6,8 @@
 
 ### Original design by: [Rizki Mulyawan](https://dribbble.com/mulyawan) 
 
-### 📧 [Contact me](mailto:dev.joseangel.rey@gmail.com) 
+### Developed by: [Jose Angel Rey](https://github.com/Jose-Angel-Rey) 
+### 📧 [Contact me] 📧 (mailto:dev.joseangel.rey@gmail.com) 
 
 ### Desktop preview
 ![Desktop design](/design/Desktop-preview.png)
