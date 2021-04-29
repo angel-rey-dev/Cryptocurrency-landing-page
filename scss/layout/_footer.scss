@@ -9,30 +9,30 @@
   width: 100%;
   background-color: $footer-bg-color;
 
-  &#{__logo} {
+  &__logo {
     width: 130px;
     margin-bottom: 35px;
   }
 
   // Navbar
-  &#{-navbar} {
+  &-navbar {
     width: 100%;
     @include flexbox($jtf: space-between);
     margin-bottom: 50px;
 
-    &#{__nav} {
+    &__nav {
       width: 70%;
       list-style-type: none;
       margin-bottom: 35px;
 
-      &#{__title} {
+      &__title {
         font-size: 1.5rem;
         margin-bottom: 20px;
       }
-      &#{__item} {
+      &__item {
         margin-bottom: 10px;
       }
-      &#{__link} {
+      &__link {
         text-decoration: none;
         color: #fff;
         font-size: 1.4rem;
@@ -55,12 +55,12 @@
     @include flexbox($flow: column nowrap);
     margin-bottom: 50px;
 
-    &#{__title} {
+    &__title {
       font-size: 2.4rem;
       text-align: center;
       margin-bottom: 30px;
     }
-    &#{-icons} {
+    &-icons {
       width: 80%;
       max-width: 340px;
       @include flexbox($jtf: space-between);
@@ -86,7 +86,7 @@
     @include flexbox;
     margin-bottom: 20px;
 
-    &#{__copy} {
+    &__copy {
       text-align: center;
       width: 100%;
       font-weight: 400;
