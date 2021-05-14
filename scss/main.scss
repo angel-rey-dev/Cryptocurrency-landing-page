@@ -1,0 +1,26 @@
+// ************************
+//        MAIN.SCSS
+// ************************
+
+@charset "utf-8";
+
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+//  Base
+@import "base/base";
+
+// Layout
+@import "layout/header";
+@import "layout/main-content";
+@import "layout/cta";
+@import "layout/footer";
+
+// Media queries
+@import "media-queries/media-768px";
+@import "media-queries/media-1200px";
+
+// ---------- CONTACT -----------------------
+// Github: https://github.com/Jose-Angel-Rey
+// ------------------------------------------

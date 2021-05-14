@@ -1,0 +1,167 @@
+// -----------  Media 1200px -----------------
+@media screen and (min-width: 1200px) {
+  .main-container {
+    padding: 50px 0;
+  }
+
+  // Main header styles
+  .header-container {
+    max-width: 1200px;
+  }
+  .main-header {
+    &-navbar {
+      &__login {
+        &__register-btn {
+          padding: 15px 10px;
+        }
+      }
+    }
+    &-content-principal {
+      &__title {
+        font-size: 4rem;
+        line-height: 50px;
+      }
+      &__description {
+        font-size: 1.8rem;
+        line-height: 30px;
+      }
+      &__btn {
+        padding: 15px;
+      }
+      &__illustration {
+        width: 58%;
+      }
+    }
+  }
+
+  // Main content styles
+  .main-content {
+    // Why us section
+    .why-us-wrapper {
+      flex-flow: column nowrap;
+      .stats-section {
+        max-width: 1100px;
+      }
+      .why-us-section {
+        width: 80%;
+        max-width: 1200px;
+
+        &__content {
+          width: 40%;
+          &__title {
+            font-size: 3.3rem;
+          }
+          &__description {
+            font-size: 1.8rem;
+            line-height: 25px;
+          }
+          &__btn {
+            margin: 20px 0;
+            padding: 15px 10px;
+          }
+        }
+        &__illustration {
+          width: 60%;
+        }
+      }
+      .benefits-section {
+        flex-flow: column nowrap;
+        &__title {
+          font-size: 3.3rem;
+        }
+        &__description {
+          font-size: 1.7rem;
+        }
+        .card-info {
+          max-width: 650px;
+          padding: 35px;
+          &__title {
+            font-size: 1.8rem;
+          }
+          &__description {
+            font-size: 2.3rem;
+          }
+          &__advice {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    // Cryptocurrencies section
+    .cryptocurrencies-section {
+      flex-flow: column nowrap;
+
+      &__title {
+        font-size: 3rem;
+        margin: 50px auto;
+      }
+      .cryptocurrencies-info-cards {
+        max-width: 1150px;
+      }
+    }
+
+    // Features section
+    .features-section {
+      flex-flow: column nowrap;
+      &__title {
+        font-size: 3.5rem;
+        max-width: 700px;
+      }
+      .invest-smart-article,
+      .detailed-stats-article,
+      .grow-profit-article {
+        max-width: 1100px;
+        justify-content: space-evenly;
+        margin-bottom: 120px;
+        &__content {
+          width: 35%;
+          margin: 0;
+          &__title {
+            font-size: 3rem;
+          }
+          &__description {
+            font-size: 1.8rem;
+          }
+          &__btn {
+            padding: 15px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // CTA styles
+  .cta-section {
+    max-width: 850px;
+    &__content {
+      width: 30%;
+    }
+    &__subscribe {
+      justify-content: space-evenly;
+      width: 60%;
+      &__input {
+        width: 55%;
+      }
+      &__btn {
+        padding: 15px 10px;
+      }
+    }
+  }
+
+  // Main footer styles
+  .footer-container {
+    max-width: 1200px;
+  }
+  .main-footer {
+    &-navbar {
+      max-width: 300px;
+    }
+    .payment-systems {
+      max-width: 300px;
+      &-icons {
+        width: 80%;
+      }
+    }
+  }
+}

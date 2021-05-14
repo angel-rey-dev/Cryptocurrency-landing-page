@@ -1,0 +1,208 @@
+// --------  Media 768px  -------------
+
+@media screen and (min-width: 768px) {
+  // Main header styles
+  .header-container {
+    max-width: 80%;
+  }
+  .main-header {
+    &-navbar {
+      justify-content: space-between;
+      &__nav {
+        width: 40%;
+        max-width: 290px;
+        margin-top: 0;
+        order: 1;
+      }
+      &__login {
+        width: 30%;
+      }
+    }
+
+    &-content-principal {
+      width: 50%;
+      justify-content: flex-start;
+      text-align: left;
+      &__illustration {
+        width: 50%;
+      }
+    }
+  }
+  .main-header-content-container {
+    justify-content: space-between;
+  }
+
+  // Main content styles
+  .main-content {
+    // Why us section
+    .why-us-wrapper {
+      .stats-section {
+        margin-top: 50px;
+        width: 90%;
+        flex-flow: row nowrap;
+        &__reference {
+          width: 30%;
+          margin-bottom: 0;
+        }
+      }
+      .why-us-section {
+        width: 90%;
+        max-width: 750px;
+        @include flexbox($jtf: space-between);
+        &__content {
+          width: 45%;
+          order: 1;
+          @include flexbox($jtf: flex-start);
+          text-align: left;
+          margin: 25px 0;
+        }
+        &__illustration {
+          width: 55%;
+        }
+      }
+      .benefits-section {
+        max-width: 80%;
+        @include flexbox;
+        &__title {
+          width: 60%;
+        }
+        &__description {
+          width: 60%;
+        }
+        .card-info {
+          max-width: 50%;
+        }
+      }
+    }
+    // Cryptocurrencies section
+    .cryptocurrencies-section {
+      &__title {
+        width: 100%;
+      }
+      .cryptocurrencies-info-cards {
+        width: 95%;
+        max-width: 1050px;
+      }
+    }
+
+    // Features section
+    .features-section {
+      &__title {
+        font-size: 3rem;
+        max-width: 580px;
+      }
+
+      .invest-smart-article {
+        justify-content: space-between;
+        margin-bottom: 75px;
+
+        &__content {
+          width: 45%;
+          margin: 40px 0;
+          justify-content: flex-start;
+          text-align: left;
+          &__title {
+            font-size: 2.6rem;
+          }
+          &__description {
+            margin: 25px 0;
+          }
+        }
+        &__graphic {
+          width: 50%;
+        }
+      }
+      .detailed-stats-article {
+        justify-content: space-between;
+        margin-bottom: 75px;
+
+        &__content {
+          width: 40%;
+          margin: 40px 0;
+          justify-content: flex-start;
+          text-align: left;
+          &__title {
+            font-size: 2.6rem;
+          }
+          &__description {
+            margin: 25px 0;
+          }
+        }
+        &__graphic {
+          width: 55%;
+          order: -1;
+        }
+      }
+      .grow-profit-article {
+        justify-content: space-between;
+
+        &__content {
+          width: 45%;
+          margin: 40px 0;
+          justify-content: flex-start;
+          text-align: left;
+          &__title {
+            font-size: 2.6rem;
+          }
+          &__description {
+            margin: 25px 0;
+          }
+        }
+        &__graphic {
+          width: 55%;
+        }
+      }
+    }
+  }
+
+  // CTA styles
+  .cta-section {
+    max-width: 750px;
+    justify-content: space-between;
+    &__content {
+      width: 50%;
+      margin: 0;
+      text-align: left;
+    }
+    &__subscribe {
+      width: 45%;
+      margin: 0;
+      @include flexbox;
+    }
+  }
+
+  // Main footer styles
+  .footer-container {
+    width: 90%;
+    max-width: 800px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .main-footer {
+    &-navbar {
+      width: 40%;
+      align-items: flex-start;
+      &__nav {
+        width: 50%;
+      }
+    }
+    .payment-systems {
+      width: 35%;
+      &-icons {
+        width: 100%;
+      }
+    }
+    .copy-and-social {
+      justify-content: space-between;
+      &__copy {
+        width: 200px;
+        margin-bottom: 0;
+      }
+      .social-icons {
+        max-width: 200px;
+        justify-content: space-between;
+      }
+    }
+  }
+}

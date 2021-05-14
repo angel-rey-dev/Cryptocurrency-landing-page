@@ -1,4 +1,4 @@
-/* CTA styles */
+// CTA styles
 .cta-section {
   width: 80%;
   max-width: 400px;
@@ -13,23 +13,23 @@
   padding: 25px;
   @include flexbox;
 
-  &#{__content} {
+  &__content {
     width: 100%;
     text-align: center;
     margin-bottom: 25px;
-    &#{__title} {
+    &__title {
       font-size: 2rem;
     }
-    &#{__description} {
+    &__description {
       margin: 20px auto;
       font-size: 1.4rem;
       font-weight: 400;
     }
   }
 
-  &#{__subscribe} {
+  &__subscribe {
     text-align: center;
-    &#{__input} {
+    &__input {
       width: 100%;
       background-color: transparent;
       border: none;
@@ -52,7 +52,7 @@
         font-size: 1.2rem;
       }
     }
-    &#{__btn} {
+    &__btn {
       @include button;
       background-color: #fff;
       color: $footer-bg-color;

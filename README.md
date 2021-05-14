@@ -1,16 +1,19 @@
 # Landing page concept for Cryptocurrency company
 
-## *** This landing page is only for educational purposes ****
+## **\* This landing page is for educational purposes only \*\***
 
-## 🚀🚀 URL: http://jose-angel-rey-concept-for-cryptocurrency-company.vercel.app/
+## 🚀URL🚀 : http://jose-angel-rey-concept-for-cryptocurrency-company.vercel.app/
 
-## Design provided by: 
+### Original design by: [Rizki Mulyawan](https://dribbble.com/mulyawan)
 
-## 📧 [Contact me](mailto:dev.joseangel.rey@gmail.com) 
+### Developed by: [Jose Angel Rey](https://github.com/Jose-Angel-Rey)
+
+### 📧 [Contact me] 📧 (mailto:dev.joseangel.rey@gmail.com)
 
 ### Desktop preview
+
 ![Desktop design](/design/Desktop-preview.png)
 
 ### Mobile preview
-![Mobile design](/design/Mobile-preview.png)
 
+![Mobile design](/design/Mobile-preview.png)
