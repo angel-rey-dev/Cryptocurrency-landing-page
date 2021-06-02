@@ -79,14 +79,13 @@ ScrollReveal().reveal(".info-card", {
   distance: "3rem",
 });
 
+// ----------  Features section  -------------
 ScrollReveal().reveal(".features-section__title", {
   duration: 2000,
   delay: 500,
   origin: "top",
   distance: "2rem",
 });
-
-// ----------  Features section  -------------
 ScrollReveal().reveal(".invest-smart-article__graphic", {
   duration: 2000,
   delay: 500,
