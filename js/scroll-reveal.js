@@ -71,6 +71,7 @@ ScrollReveal().reveal(".cryptocurrencies-section__title", {
   origin: "left",
   distance: "3rem",
 });
+
 ScrollReveal().reveal(".info-card", {
   duration: 2000,
   delay: 500,
