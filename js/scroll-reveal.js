@@ -7,13 +7,13 @@ ScrollReveal().reveal(".main-header-navbar", {
   duration: 2000,
   delay: 500,
   origin: "top",
-  distance: "2rem"
+  distance: "2rem",
 });
 ScrollReveal().reveal(".main-header-content-principal", {
   duration: 2000,
   delay: 500,
   origin: "left",
-  distance: "2rem"
+  distance: "2rem",
 });
 ScrollReveal().reveal(".main-header-content-principal__illustration", {
   duration: 2000,
@@ -58,7 +58,6 @@ ScrollReveal().reveal(".benefits-section__description", {
   distance: "3rem",
 });
 
-
 ScrollReveal().reveal(".card-info", {
   duration: 2000,
   delay: 500,
@@ -66,3 +65,15 @@ ScrollReveal().reveal(".card-info", {
   distance: "3rem",
 });
 
+ScrollReveal().reveal(".cryptocurrencies-section__title", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+ScrollReveal().reveal(".info-card", {
+  duration: 2000,
+  delay: 500,
+  origin: "bottom",
+  distance: "3rem",
+});
