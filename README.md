@@ -10,9 +10,13 @@
 
 ### 📧 [Contact me](mailto:dev.joseangel.rey@gmail.com)
 
+---
+
 ### Desktop preview
 
 ![Desktop design](/design/Desktop-preview.png)
+
+---
 
 ### Mobile preview
 
