@@ -78,3 +78,73 @@ ScrollReveal().reveal(".info-card", {
   origin: "bottom",
   distance: "3rem",
 });
+
+ScrollReveal().reveal(".features-section__title", {
+  duration: 2000,
+  delay: 500,
+  origin: "top",
+  distance: "2rem",
+});
+
+// ----------  Features section  -------------
+ScrollReveal().reveal(".invest-smart-article__graphic", {
+  duration: 2000,
+  delay: 500,
+  origin: "right",
+  distance: "3rem",
+});
+ScrollReveal().reveal(".invest-smart-article__content", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+ScrollReveal().reveal(".detailed-stats-article__content", {
+  duration: 2000,
+  delay: 500,
+  origin: "right",
+  distance: "3rem",
+});
+ScrollReveal().reveal(".detailed-stats-article__graphic", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+ScrollReveal().reveal(".grow-profit-article__graphic", {
+  duration: 2000,
+  delay: 500,
+  origin: "right",
+  distance: "3rem",
+});
+ScrollReveal().reveal(".grow-profit-article__content", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+ScrollReveal().reveal(".cta-section", {
+  duration: 2000,
+  delay: 500,
+  origin: "bottom",
+  distance: "3rem",
+});
+
+// ---- Main footer -------
+ScrollReveal().reveal(".footer-container", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+// ---- Attribution -----
+ScrollReveal().reveal(".attribution p", {
+  duration: 2000,
+  delay: 500,
+  origin: "bottom",
+  distance: "3rem",
+});
